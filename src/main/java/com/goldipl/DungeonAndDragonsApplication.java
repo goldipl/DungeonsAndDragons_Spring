@@ -8,6 +8,7 @@ public class DungeonAndDragonsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DungeonAndDragonsApplication.class, args);
+
 	}
 
 }
