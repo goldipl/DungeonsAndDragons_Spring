@@ -52,6 +52,8 @@ public class Knight {
         this.name = name;
         this.age = age;
         this.quest = quest;
+        this.gold = gold;
+        this.wood = wood;
     }
 
     @Override
@@ -63,5 +65,13 @@ public class Knight {
                 "wood = " + wood + " | " +
                 "quest = " + quest +
                 "]";
+    }
+
+    public int setExtraGold(int extraGold) {
+        return gold += extraGold;
+    }
+
+    public int setExtraWood(int extraWood) {
+        return wood += extraWood;
     }
 }
