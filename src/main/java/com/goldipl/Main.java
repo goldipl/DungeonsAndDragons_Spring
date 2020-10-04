@@ -3,6 +3,9 @@ package com.goldipl;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+// CommandLineRunner - interfejs, ktorego metoda run zostanie
+// wywolana po zakonczeniu przez Springa swojej konfiguracji
+
 @Component
 public class Main implements CommandLineRunner {
 
