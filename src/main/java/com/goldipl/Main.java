@@ -1,5 +1,6 @@
 package com.goldipl;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -12,6 +13,8 @@ public class Main implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
+        Dungeon crystalDungeon = new Dungeon("Crystal Dungeon");
+
         Quest saveTheKing = new Quest("Save The King");
         Quest obtain2000gold = new Quest("Obtain 2000 gold");
         Quest obtain2000wood = new Quest("Obtain 2000 wood");
@@ -23,5 +26,7 @@ public class Main implements CommandLineRunner {
         System.out.println(martinez);
         System.out.println(darinero);
         System.out.println(quario);
+        System.out.println("---------------------------------------------------------");
+        System.out.println(martinez + " entered [" + crystalDungeon + "]");
     }
 }
