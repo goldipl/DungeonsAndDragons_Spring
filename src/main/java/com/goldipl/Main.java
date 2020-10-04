@@ -19,9 +19,9 @@ public class Main implements CommandLineRunner {
         Quest obtain2000gold = new Quest("Obtain 2000 gold");
         Quest obtain2000wood = new Quest("Obtain 2000 wood");
 
-        Knight martinez = new Knight("Martinez", 30, saveTheKing);
-        Knight darinero = new Knight("Darinero", 41, obtain2000gold);
-        Knight quario = new Knight("Quario", 35, obtain2000wood);
+        Knight martinez = new Knight("Martinez", 30, 2000,2000, saveTheKing);
+        Knight darinero = new Knight("Darinero", 41, 3000, 4000, obtain2000gold);
+        Knight quario = new Knight("Quario", 35, 2500, 4000, obtain2000wood);
 
         System.out.println(martinez);
         System.out.println(darinero);
