@@ -12,9 +12,13 @@ public class Main implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        Knight martinez = new Knight("Martinez", 30);
-        Knight darinero = new Knight("Darinero", 41);
-        Knight quario = new Knight("Quario", 35);
+        Quest saveTheKing = new Quest("Save The King");
+        Quest obtain2000gold = new Quest("Obtain 2000 gold");
+        Quest obtain2000wood = new Quest("Obtain 2000 wood");
+
+        Knight martinez = new Knight("Martinez", 30, saveTheKing);
+        Knight darinero = new Knight("Darinero", 41, obtain2000gold);
+        Knight quario = new Knight("Quario", 35, obtain2000wood);
 
         System.out.println(martinez);
         System.out.println(darinero);
