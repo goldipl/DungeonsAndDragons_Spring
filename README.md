@@ -11,3 +11,4 @@ Project was created with:
 * Spring
 * Maven
 * Tomcat server
+* jUnit 5
