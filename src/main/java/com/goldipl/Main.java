@@ -1,6 +1,5 @@
 package com.goldipl;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -23,10 +22,22 @@ public class Main implements CommandLineRunner {
         Knight darinero = new Knight("Darinero", 41, 3000, 4000, obtain2000gold);
         Knight quario = new Knight("Quario", 35, 2500, 4000, obtain2000wood);
 
+        Duel mvsd = new Duel(martinez,darinero);
+
         System.out.println(martinez);
         System.out.println(darinero);
         System.out.println(quario);
         System.out.println("---------------------------------------------------------");
         System.out.println(martinez + " entered [" + crystalDungeon + "]");
+        System.out.println("---------------------------------------------------------");
+        System.out.println("---> Adding extra gold (2000) and extra wood (1500) for Martinez <---");
+
+        martinez.setExtraGold(2000);
+        martinez.setExtraWood(1500);
+
+        System.out.println(martinez);
+
+        System.out.println(mvsd);
+
     }
 }
