@@ -67,6 +67,8 @@ public class KnightTests {
         Knight knightExcept = new Knight("Quario", 40, 12500, 9000, obtain2000wood);
         assertEquals(knight.toString(), knightExcept.toString());
         assertTrue(knight.toString().equals(knightExcept.toString()));
+        assertEquals(knight.getAge(),40);
+        assertEquals(knight.getQuest(), obtain2000wood);
     }
 
 }
