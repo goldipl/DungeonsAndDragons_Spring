@@ -12,8 +12,14 @@ public class Duel {
         this.duelOpponentSecond = this.winner = duelOpponentSecond;
     }
 
+    // If the loser has gold < 0 after reducing gold
+    // then application returns gold = 0
+
     public int loseGold (int i) {
-        return loser.getGold(loser.setExtraGold(-i));
+        if (loser.getGold(loser.setExtraGold(-i)) < 0) {
+            return loser.getGold(loser.setGold(0));
+        } else
+            return loser.getGold(loser.setExtraGold(-i));
     }
 
     public int winGold (int i) {
