@@ -24,6 +24,7 @@ public class Main implements CommandLineRunner {
 
         Duel mvsd = new Duel(martinez,darinero);
 
+
         System.out.println(martinez);
         System.out.println(darinero);
         System.out.println(quario);
@@ -37,6 +38,10 @@ public class Main implements CommandLineRunner {
 
         System.out.println(martinez);
 
+        System.out.println(mvsd);
+        System.out.println("---------------------------------------------------------");
+        mvsd.loseGold(10000);
+        mvsd.winGold(10000);
         System.out.println(mvsd);
 
     }
