@@ -24,7 +24,7 @@ public class Knight {
         this.age = age;
     }
 
-    public int getGold(int i) {
+    public int getGold(int gold) {
         return gold;
     }
 
@@ -32,7 +32,7 @@ public class Knight {
         this.gold = gold;
     }
 
-    public int getWood(int i) {
+    public int getWood(int wood) {
         return wood;
     }
 
