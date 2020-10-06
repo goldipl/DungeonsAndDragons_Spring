@@ -20,24 +20,27 @@ public class Knight {
         return age;
     }
 
-    public void setAge(int age) {
+    public int setAge(int age) {
         this.age = age;
+        return age;
     }
 
     public int getGold(int gold) {
         return gold;
     }
 
-    public void setGold(int gold) {
+    public int setGold(int gold) {
         this.gold = gold;
+        return gold;
     }
 
     public int getWood(int wood) {
         return wood;
     }
 
-    public void setWood(int wood) {
+    public int setWood(int wood) {
         this.wood = wood;
+        return wood;
     }
 
     public Quest getQuest() {
