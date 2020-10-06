@@ -23,7 +23,8 @@ public class DuelTests {
         assertTrue(martinez.toString().equals(martinezLoser.toString()));
         assertTrue(darinero.toString().equals(darineroWiner.toString()));
     }
-        @Test
+
+    @Test
     public void duelMvsDTest2() {
         Quest saveTheKing = new Quest("Save The King");
         Quest obtain2000gold = new Quest("Obtain 2000 gold");
@@ -40,7 +41,8 @@ public class DuelTests {
         assertFalse(martinez.toString().equals(martinezLoser.toString()));
         assertTrue(darinero.toString().equals(darineroWiner.toString()));
     }
-        @Test
+
+    @Test
     public void duelMvsDTest3() {
         Quest saveTheKing = new Quest("Save The King");
         Quest obtain2000gold = new Quest("Obtain 2000 gold");
