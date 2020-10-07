@@ -31,18 +31,31 @@ public class Main implements CommandLineRunner {
         System.out.println("---------------------------------------------------------");
         System.out.println(martinez + " entered [" + crystalDungeon + "]");
         System.out.println("---------------------------------------------------------");
-        System.out.println("---> Adding extra gold (2000) and extra wood (1500) for Martinez <---");
 
+        System.out.println("---> Knight Martinez <---");
+        System.out.println(martinez);
+        System.out.println("---> Adding extra gold (2000) and extra wood (1500) for Martinez <---");
         martinez.setExtraGold(2000);
         martinez.setExtraWood(1500);
-
+        System.out.println("---> Knight Martinez after adding extra gold (2000) and extra wood (1500) <---");
         System.out.println(martinez);
 
+        System.out.println("---------------> Knights Dueling <---------------");
         System.out.println(mvsd);
-        System.out.println("---------------------------------------------------------");
+        // First Knight Losing gold (Martinez) - Second Knight Winning Gold (Darinero)
         mvsd.loseGold(10000);
         mvsd.winGold(10000);
+        System.out.println("--------------------------------------------> Knights After Duel <-------------------------------------------");
+        System.out.println("---------------> First Knight Losing gold (Martinez) - Second Knight Winning Gold (Darinero) <---------------");
         System.out.println(mvsd);
+
+        // ---------------> Adding Knights to HashMap <---------------
+        crystalDungeon.createKnight("Martinez", 30, 2000,2000, saveTheKing);
+        crystalDungeon.createKnight("Darinero", 41, 3000, 4000, obtain2000gold);
+        crystalDungeon.createKnight("Quario", 35, 2500, 4000, obtain2000wood);
+
+        System.out.println("---------------> Getting All Knights from HashMap <---------------");
+        System.out.println(crystalDungeon.getAllKnights());
 
     }
 }
