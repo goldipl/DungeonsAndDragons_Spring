@@ -3,6 +3,8 @@ package com.goldipl;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 // CommandLineRunner - interfejs, ktorego metoda run zostanie
 // wywolana po zakonczeniu przez Springa swojej konfiguracji
 
@@ -11,6 +13,8 @@ public class Main implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+
+        Challange challange = new Challange();
 
         Dungeon crystalDungeon = new Dungeon("Crystal Dungeon");
 
@@ -56,6 +60,11 @@ public class Main implements CommandLineRunner {
 
         System.out.println("---------------> Getting All Knights from HashMap <---------------");
         System.out.println(crystalDungeon.getAllKnights());
+
+        System.out.println("---------------> Getting All Challanges from the List <---------------");
+        System.out.println(challange.getList());
+        System.out.println("---------------> Getting Random Challange from the List <---------------");
+        System.out.println(challange.getRandomChallangeDescriptions());
 
     }
 }

@@ -1,5 +1,9 @@
 package com.goldipl;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
 public class Quest {
 
     private String questDescription;
@@ -12,4 +16,5 @@ public class Quest {
     public String toString() {
         return questDescription;
     }
+
 }
