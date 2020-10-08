@@ -26,6 +26,8 @@ public class Main implements CommandLineRunner {
         Knight darinero = new Knight("Darinero", 41, 3000, 4000, obtain2000gold);
         Knight quario = new Knight("Quario", 35, 2500, 4000, obtain2000wood);
 
+        SuperKnight amazenoru = new SuperKnight("Amazenoru", 25, 15000, 15000, saveTheKing, 100);
+
         Duel mvsd = new Duel(martinez,darinero);
 
 
@@ -65,6 +67,9 @@ public class Main implements CommandLineRunner {
         System.out.println(challange.getList());
         System.out.println("---------------> Getting Random Challange from the List <---------------");
         System.out.println(challange.getRandomChallangeDescriptions());
+
+        System.out.println("---------------> New SuperKnight <---------------");
+        System.out.println(amazenoru);
 
     }
 }

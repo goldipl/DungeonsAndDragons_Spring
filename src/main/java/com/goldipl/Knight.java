@@ -2,11 +2,11 @@ package com.goldipl;
 
 public class Knight {
 
-    private String name;
-    private int age;
-    private int gold;
-    private int wood;
-    private Quest quest;
+    public String name;
+    public int age;
+    public int gold;
+    public int wood;
+    public Quest quest;
 
     public String getName() {
         return name;
