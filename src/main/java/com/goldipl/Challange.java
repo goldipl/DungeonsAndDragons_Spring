@@ -26,7 +26,11 @@ public class Challange {
         return challangeDescriptions;
     }
 
-    public List<String> getRandomChallangeDescriptions() {
-        return Collections.singletonList(challangeDescriptions.get(random.nextInt(challangeDescriptions.size())));
+//    public List<String> getRandomChallangeDescriptions() {
+//        return Collections.singletonList(challangeDescriptions.get(random.nextInt(challangeDescriptions.size())));
+//    }
+
+    public String getRandomChallangeDescriptions() {
+        return challangeDescriptions.get(random.nextInt(challangeDescriptions.size()));
     }
 }
