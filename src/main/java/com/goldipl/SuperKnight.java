@@ -1,6 +1,6 @@
 package com.goldipl;
 
-public class SuperKnight extends Knight {
+public class SuperKnight extends Knight implements SuperKnightInterface {
 
     public int gloryPoints;
 
@@ -21,10 +21,12 @@ public class SuperKnight extends Knight {
                 "]";
     }
 
+    @Override
     public int getGloryPoints() {
         return gloryPoints;
     }
 
+    @Override
     public void setGloryPoints(int gloryPoints) {
         this.gloryPoints = gloryPoints;
     }
