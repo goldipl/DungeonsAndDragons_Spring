@@ -14,7 +14,7 @@ public class SuperKnightTests {
         amazenoru.setAge(40);
         amazenoru.setExtraGold(10000);
         amazenoru.setExtraWood(5000);
-        Knight knightExcept = new SuperKnight("Amazenoru", 40, 25000, 20000, saveTheKing, 100);
+        SuperKnight knightExcept = new SuperKnight("Amazenoru", 40, 25000, 20000, saveTheKing, 100);
         assertEquals(amazenoru.toString(), knightExcept.toString());
         assertTrue(amazenoru.toString().equals(knightExcept.toString()));
         assertEquals(amazenoru.getAge(),40);
@@ -29,7 +29,7 @@ public class SuperKnightTests {
         amazenoru.setExtraGold(5000);
         amazenoru.setExtraWood(5000);
         amazenoru.setGloryPoints(200);
-        Knight knightExcept = new SuperKnight("Amazenoru", 30, 20000, 20000, saveTheKing, 200);
+        SuperKnight knightExcept = new SuperKnight("Amazenoru", 30, 20000, 20000, saveTheKing, 200);
         assertEquals(amazenoru.toString(), knightExcept.toString());
         assertTrue(amazenoru.toString().equals(knightExcept.toString()));
         assertEquals(amazenoru.getAge(),30);
