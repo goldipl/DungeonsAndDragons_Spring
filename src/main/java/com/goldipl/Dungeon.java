@@ -1,6 +1,7 @@
 package com.goldipl;
 
-import javax.annotation.PostConstruct;
+import com.goldipl.knights.Knight;
+
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;

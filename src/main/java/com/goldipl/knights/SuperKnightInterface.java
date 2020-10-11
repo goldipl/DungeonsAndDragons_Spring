@@ -1,4 +1,4 @@
-package com.goldipl;
+package com.goldipl.knights;
 
 public interface SuperKnightInterface {
     int getGloryPoints();

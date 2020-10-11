@@ -1,5 +1,6 @@
 package com.goldipl;
 
+import com.goldipl.knights.Knight;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

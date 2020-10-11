@@ -1,5 +1,7 @@
 package com.goldipl;
 
+import com.goldipl.knights.Knight;
+
 public class Duel {
 
     private Knight duelOpponentFirst;

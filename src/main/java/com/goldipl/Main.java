@@ -1,9 +1,9 @@
 package com.goldipl;
 
+import com.goldipl.knights.Knight;
+import com.goldipl.knights.SuperKnight;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-
-import java.util.List;
 
 // CommandLineRunner - interfejs, ktorego metoda run zostanie
 // wywolana po zakonczeniu przez Springa swojej konfiguracji

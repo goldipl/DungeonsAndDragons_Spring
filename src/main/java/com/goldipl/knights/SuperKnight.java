@@ -1,4 +1,6 @@
-package com.goldipl;
+package com.goldipl.knights;
+
+import com.goldipl.Quest;
 
 public class SuperKnight extends Knight implements SuperKnightInterface {
 
