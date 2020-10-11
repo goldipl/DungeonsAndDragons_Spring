@@ -1,6 +1,6 @@
 package com.goldipl.monsters;
 
-public class DragonLord extends Dragon {
+public class DragonLord extends Dragon implements DragonLordInterface {
 
     private int extraPower;
 
@@ -8,10 +8,12 @@ public class DragonLord extends Dragon {
         super(name, lvl, hp);
     }
 
+    @Override
     public int getExtraPower() {
         return extraPower;
     }
 
+    @Override
     public void setExtraPower(int extraPower) {
         this.extraPower = extraPower;
     }
