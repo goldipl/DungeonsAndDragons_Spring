@@ -2,6 +2,10 @@ package com.goldipl;
 
 import com.goldipl.knights.Knight;
 import com.goldipl.knights.SuperKnight;
+import com.goldipl.monsters.Dragon;
+import com.goldipl.monsters.DragonLord;
+import com.goldipl.monsters.Goblin;
+import com.goldipl.monsters.Witch;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -70,6 +74,28 @@ public class Main implements CommandLineRunner {
 
         System.out.println("---------------> New SuperKnight <---------------");
         System.out.println(amazenoru);
+
+        System.out.println("---------------> ----- MONSTERS ----- <---------------");
+
+        Dragon dragonix = new Dragon("Dragonix", 2, 120);
+        Dragon faronix = new Dragon("Faronix", 6, 200);
+        Dragon dragonaxerox = new Dragon("Dragonaxerox", 12, 400);
+
+        Goblin marcox = new Goblin("Marcox", 2, 100);
+        Goblin arcox = new Goblin("Arcox", 6, 160);
+        Goblin farcox = new Goblin("Farcox", 12, 340);
+
+        Witch abrax = new Witch("Abrax", 2, 100);
+        Witch kadrax = new Witch("Kadrax", 6, 160);
+        Witch fadrax = new Witch("Fadrax", 12, 340);
+
+        DragonLord redonix = new DragonLord("Redonix", 50, 1200, 400);
+
+        System.out.println(dragonix + "\n" + faronix + "\n" + dragonaxerox + "\n" + marcox
+                + "\n" + arcox + "\n" + farcox + "\n" + abrax + "\n" + kadrax + "\n" +
+                fadrax + "\n" + redonix);
+
+
 
     }
 }
