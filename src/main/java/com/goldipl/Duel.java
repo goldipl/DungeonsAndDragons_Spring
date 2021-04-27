@@ -20,8 +20,9 @@ public class Duel {
     public int loseGold (int i) {
         if (loser.getGold(loser.setExtraGold(-i)) < 0) {
             return loser.getGold(loser.setGold(0));
-        } else
+        } else {
             return loser.getGold(loser.setExtraGold(-i));
+        }
     }
 
     public int winGold (int i) {
